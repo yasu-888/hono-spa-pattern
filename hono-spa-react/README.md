@@ -9,7 +9,7 @@ pnpm dev   # 1プロセス・1ポートで Hono(API) + Vite(HMR)
 
 - Vite dev サーバーに `@hono/vite-dev-server` を噛ませて、`src/app.tsx` の Hono アプリを同居させています。
 - 開発中は Vite が `/src/*` をそのまま配信し、API も同じ 5173 ポートで動きます。
-- 本番用の Node サーバー起動は `src/server.tsx`（ビルド後は `dist/server.js`）。
+- 本番用の Node サーバー起動は `src/server.ts`（ビルド後は `dist/server.js`）。
 
 本番ビルド & 実行
 
